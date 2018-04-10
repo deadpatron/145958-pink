@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Межевикин](https://up.htmlacademy.ru/adaptive/14/user/145958).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243).
 
 ---
 
