@@ -5,8 +5,37 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="header-page">
+      <a class="header-page__logo">
+        <img src="http://placehold.it/75x22" alt="Pink" class="header-page__logo-img" width="75" height="22">
+      </a>
+      <button class="header-page__toggle"><span class="visually-hidden">Показать/закрыть меню</span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-navigation">
+          <li class="site-navigation__item site-navigation__item--active"><a>Главная</a></li>
+          <li class="site-navigation__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-navigation__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-navigation__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Pink, раскрась серые будни в розовый цвет!</h1>
+      <div class="main-page__example">
+        <img class="main-page__example-img" src="http://placehold.it/260x290" width="260" height="290" />
+      </div>
+      <section class="application-install">
+        <a class="application-install__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <ul class="application-install__list list-icon">
+          <li class="list-icon__item apple-store"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple-store</span></a></li>
+          <li class="list-icon__item google-play"><a href="https://play.google.com/store"><span class="visually-hidden">google-play</span></a></li>
+          <li class="list-icon__item windows-phone"><a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">windows-phone</span></a></li>
+        </ul>
+        <p class="application-install__info app-info">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+    </main>
 
   </body>
 </html>
