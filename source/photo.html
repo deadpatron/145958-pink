@@ -94,6 +94,35 @@
           </li>
         </ul>
       </section>
+      <p class="main-photo__support-text">
+        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      </p>
+      <section class="user-photo__add">
+        <form class="photo-editor">
+          <img src="http://placehold.it/280x374" alt="загруженное фото" width="280" height="374" class="photo-editor__img">
+          <ul class="photo-editor__tools-list">
+            <li class="photo-editor__tool photo-editor__tool--active">
+              <img src="http://placehold.it/50x50" alt="обрезать" width="50" height="50" class="photo-editor__tool-ikon">
+              <input type="range" name="intensity-cut" id="intensity-cut" class="photo-editor__intensity">
+              <label for="intensity-cut" class="visually-hidden">обрезать</label>
+            </li>
+            <li class="photo-editor__tool">
+              <img src="http://placehold.it/50x50" alt="контраст" width="50" height="50" class="photo-editor__tool-ikon">
+              <input type="range" name="intensity-contrast" id="intensity-contrast" class="photo-editor__intensity">
+              <label for="intensity-contrast" class="visually-hidden">контраст</label>
+            </li>
+            <li class="photo-editor__tool">
+              <img src="http://placehold.it/50x50" alt="закраска" width="50" height="50" class="photo-editor__tool-ikon">
+              <input type="range" name="intensity-fill" id="intensity-fill" class="photo-editor__intensity">
+              <label for="intensity-fill" class="visually-hidden">закраска</label>
+            </li>
+          </ul>
+          <button type="submit" class="photo-editor__button button">Запостить</button>
+          <button type="reset" class="photo-editor__button button--disable">Отмена</button>
+        </form>
+
+      </section>
+
     </main>
 
 
