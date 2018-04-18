@@ -27,11 +27,11 @@
       </div>
       <section class="application-install">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="application-install__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <a class="application-install__btn btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="application-install__list list-icon">
-          <li class="list-icon__item apple-store"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple-store</span></a></li>
-          <li class="list-icon__item google-play"><a href="https://play.google.com/store"><span class="visually-hidden">google-play</span></a></li>
-          <li class="list-icon__item windows-phone"><a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">windows-phone</span></a></li>
+          <li class="list-icon__item list-icon__item--apple-store"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple-store</span></a></li>
+          <li class="list-icon__item list-icon__item--google-play"><a href="https://play.google.com/store"><span class="visually-hidden">google-play</span></a></li>
+          <li class="list-icon__item list-icon__item--windows-phone"><a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">windows-phone</span></a></li>
         </ul>
         <p class="application-install__info app-info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -46,17 +46,20 @@
         <ul class="information__list">
           <li class="information__item">
             <h3 class="information__title">Поднимает настроение</h3>
-            <p class="information_description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="information__item">
             <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information_description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="information__item">
             <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <div class="main-page__img-wrapper">
+          <img src="http://placehold.it/157x320" alt="всем привет!" class="main-page__hi-img" width="157" height="320">
+        </div>
       </section>
       <section class="comments">
         <h2 class="visually-hidden">Комментарии</h2>
@@ -76,7 +79,7 @@
             </li>
           </ul>
           <p class="comments__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
@@ -85,106 +88,100 @@
       <section class="prise">
         <h2 class="visually-hidden">Выбор подписки</h2>
         <div class="prise__wrapper slider">
-          <ul class="prise__list slider__list">
-            <li class="prise__item slider__items">
               <table class="prise__table services">
-                <caption class="services__profile">
-                  <h3 class="services__name">База</h3>
-                  <p class="services__prise">
-                    1,99 USD
-                  </p>
-                </caption>
-                <tr class="services__item">
-                  <td class="services__item-name">Розовый фильтр</td>
-                  <td class="services__item-enable">Да</td>
+                <tr class="services__profile">
+                  <th class="services__head">
+                    <b class="services__name">База</b>
+                    <p class="services__prise">
+                      1,99 USD
+                    </p>
+                  </th>
+                  <th class="services__head">
+                    <b class="services__name">Стандарт</b>
+                    <p class="services__prise">
+                      3,99 USD
+                    </p>
+                  </th>
+                  <th class="services__head">
+                    <b class="services__name">Анлим</b>
+                    <p class="services__prise">
+                      9,99 USD
+                    </p>
+                  </th>
                 </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Смайлики</td>
-                  <td class="services__item-enable services__item-enable--disable">нет</td>
+                <tr class="services__list">
+                  <td class="services__item">
+                    <span class="services__item-name">Розовый фильтр</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Розовый фильтр</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Розовый фильтр</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
                 </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Комментарии</td>
-                  <td class="services__item-enable services__item-enable--disable">нет</td>
+                <tr class="services__list">
+                  <td class="services__item">
+                    <span class="services__item-name">Смайлики</span>
+                    <span class="services__item-enable services__item-enable--disable">Нет</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Смайлики</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Смайлики</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
+                </tr>
+                <tr class="services__list">
+                  <td class="services__item">
+                    <span class="services__item-name">Комментарии</span>
+                    <span class="services__item-enable services__item-enable--disable">Нет</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Комментарии</span>
+                    <span class="services__item-enable services__item-enable--disable">Нет</span>
+                  </td>
+                  <td class="services__item">
+                    <span class="services__item-name">Комментарии</span>
+                    <span class="services__item-enable">Да</span>
+                  </td>
                 </tr>
               </table>
-            </li>
-            <li class="prise__item prise__item--hit slider__items">
-              <table class="prise__table services">
-                <caption class="services__profile">
-                  <h3 class="services__name">Стандарт</h3>
-                  <p class="services__prise">
-                    3,99 USD
-                  </p>
-                </caption>
-                <tr class="services__item">
-                  <td class="services__item-name">Розовый фильтр</td>
-                  <td class="services__item-enable">Да</td>
-                </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Смайлики</td>
-                  <td class="services__item-enable">Да</td>
-                </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Комментарии</td>
-                  <td class="services__item-enable services__item-enable--disable">нет</td>
-                </tr>
-              </table>
-            </li>
-            <li class="prise__item slider__items">
-              <table class="prise__table services">
-                <caption class="services__profile">
-                  <h3 class="services__name">Анлим</h3>
-                  <p class="services__prise">
-                    9,99 USD
-                  </p>
-                </caption>
-                <tr class="services__item">
-                  <td class="services__item-name">Розовый фильтр</td>
-                  <td class="services__item-enable">Да</td>
-                </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Смайлики</td>
-                  <td class="services__item-enable">Да</td>
-                </tr>
-                <tr class="services__item">
-                  <td class="services__item-name">Комментарии</td>
-                  <td class="services__item-enable">Да</td>
-                </tr>
-              </table>
-            </li>
-          </ul>
           <p class="prise__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
     </main>
     <footer class="footer-page">
-      <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="footer-page__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__intro intro-text">
+          <div class="footer-page__intro intro-text">
             <p class="intro-text__item">Остались вопросы?</p>
             <p class="intro-text__item">Свяжитесь с нами!</p>
           </div>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title">Звоните:</b>
-              <p class="contacts__description">+7 (812) 555-66-66</p>
+          <ul class="footer-page__list">
+            <li class="footer-page__item">
+              <b class="footer-page__title">Звоните:</b>
+              <p class="footer-page__description">+7 (812) 555-66-66</p>
             </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Пишите:</b>
-              <p class="contacts__description">mail@htmlacademi.ru</p>
+            <li class="footer-page__item">
+              <b class="footer-page__title">Пишите:</b>
+              <p class="footer-page__description">mail@htmlacademi.ru</p>
             </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b>
-              <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+            <li class="footer-page__item">
+              <b class="footer-page__title">Приезжайте в гости:</b>
+              <p class="footer-page__description">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
         </div>
-      </section>
     </footer>
 
   </body>
