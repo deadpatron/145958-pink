@@ -1,0 +1,26 @@
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #000000;
+
+  text-align: center;
+}
+
+.site-navigation__item {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1px;
+
+  border-top: 1px solid #485461;
+
+  background-color: $menu-bg;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

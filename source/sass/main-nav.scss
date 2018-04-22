@@ -1,0 +1,14 @@
+.main-nav__toggle {
+  position: absolute;
+  right: 19px;
+  top: 21px;
+
+  min-width: 24px;
+  min-height: 23px;
+
+  border: none;
+
+  background-color: inherit;
+  /*Потом буду инлайнить*/
+  background-image: url(../img/icon-menu-cross.svg);
+}
