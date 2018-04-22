@@ -25,25 +25,40 @@
     <main class="main-page">
       <h1 class="visually-hidden">Pink, раскрась серые будни в розовый цвет!</h1>
       <div class="main-page__example">
-        <img class="main-page__example-img" src="http://placehold.it/260x290" width="260" height="290" alt="Пример обработки фото"/>
+        <img class="main-page__example-img" src="../img/iphone-hand-mobile@1x.png" width="260" height="290" alt="Пример обработки фото"/>
       </div>
       <section class="application-install">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <a class="application-install__btn btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-        <ul class="application-install__list list-icon">
-          <li class="list-icon__item list-icon__item--apple-store"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple-store</span></a></li>
-          <li class="list-icon__item list-icon__item--google-play"><a href="https://play.google.com/store"><span class="visually-hidden">google-play</span></a></li>
-          <li class="list-icon__item list-icon__item--windows-phone"><a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">windows-phone</span></a></li>
+        <ul class="application-install__list">
+          <li class="application-install__item">
+            <a class="application-install__item application-install__item--apple-store" href="https://www.apple.com/ru/ios/app-store/">
+              <img class="application-install__img" src="../img/logo-apple.svg" width="47" height="56" alt="appStore">
+              <span class="visually-hidden">apple-store</span>
+            </a>
+          </li>
+          <li class="application-install__item">
+            <a class="application-install__item application-install__item--google-play" href="https://play.google.com/store">
+              <img class="application-install__img" src="../img/logo-android.svg" width="43" height="47" alt="androidPlay">
+              <span class="visually-hidden">google-play</span>
+            </a>
+          </li>
+          <li class="application-install__item">
+            <a class="application-install__item application-install__item--windows-phone" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+              <img class="application-install__img" src="../img/logo-microsoft.svg" width="44" height="41" alt="windowsStrore">
+              <span class="visually-hidden">windows-phone</span>
+            </a>
+          </li>
         </ul>
-        <p class="application-install__info app-info">
+        <p class="application-install__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
       <section class="information">
         <h2 class="visually-hidden">Возможности приложения</h2>
-        <div class="information__intro intro-text">
-          <p class="intro-text__item">Устали от серости мегаполиса?</p>
-          <p class="intro-text__item">Нам есть, что вам предложить!</p>
+        <div class="information__intro-wrapper">
+          <p class="information__intro">Устали от серости мегаполиса?</p>
+          <p class="information__intro">Нам есть, что вам предложить!</p>
         </div>
         <ul class="information__list">
           <li class="information__item">
@@ -59,8 +74,8 @@
             <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="main-page__img-wrapper">
-          <img src="http://placehold.it/157x320" alt="всем привет!" class="main-page__hi-img" width="157" height="320">
+        <div class="information__img-wrapper">
+          <img src="../img/iphone-screen-mobile@1x.png" alt="всем привет!" class="information__hi-img" width="157" height="320">
         </div>
       </section>
       <section class="comments">
@@ -69,7 +84,7 @@
           <ul class="comments__list slider__list">
             <li class="comments__item slider__items">
               <h3 class="comments__title">Николай Петров</h3>
-              <p class="comments__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              <p class="comments__description">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
             <li class="comments__item slider__items">
               <h3 class="comments__title"></h3>
@@ -80,11 +95,11 @@
               <p class="comments__description"></p>
             </li>
           </ul>
-          <p class="comments__toggles slider__toggles">
+          <div class="comments__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
-          </p>
+          </div>
         </div>
       </section>
       <section class="prise">

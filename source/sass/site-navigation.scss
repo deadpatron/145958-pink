@@ -23,4 +23,13 @@
 
   padding-top: 15px;
   padding-bottom: 15px;
+
+  :hover {
+    color: $hover-link;
+  }
+
+  :active {
+    color: inherit;
+    opacity: $opasity-link;
+  }
 }

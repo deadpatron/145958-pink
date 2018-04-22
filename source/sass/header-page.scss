@@ -1,6 +1,9 @@
 .header-page {
   font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: $menu-bg;
 
@@ -15,6 +18,12 @@
 .header-page__logo {
   margin-left: 20px;
   margin-top: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header-page__logo {
+
+  }
 }
