@@ -2,6 +2,7 @@
 @import "visually-hidden";
 @import "variables";
 @import "scaffolding";
+/*main page*/
 @import "header-page";
 @import "main-nav";
 @import "site-navigation";
@@ -9,3 +10,7 @@
 @import "application-install";
 @import "information";
 @import "comments";
+@import "prise";
+@import "footer-page";
+/*photo page*/
+@import "main-photo"
