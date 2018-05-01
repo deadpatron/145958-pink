@@ -1,0 +1,57 @@
+.user-photo {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-color;
+}
+
+.user-photo__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.user-photo__items {
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.user-photo__item-wrapper {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 17px;
+
+  background-color: #f2f2f2;
+}
+
+.user-photo__input-time {
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: -0.5px;
+}
+
+.user-photo__likes {
+  color: #d22856;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  font-weight: normal;
+}
+
+.user-photo__add {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
