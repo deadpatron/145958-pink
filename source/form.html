@@ -29,15 +29,17 @@
       </p>
       <div class="main-form__wrapper">
         <p class="main-form__description">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="main-form__items" action="https://echo.htmlacademy.ru">
-          <label for="surname" class="main-form__label">Фамилия:</label>
-          <input type="text" name="surname" value="Укажите фамилию *" id="surname" class="main-form__input" required>
-          <label for="first-name" class="main-form__label">Имя:</label>
-          <input type="text" name="first-name" value="Введите ваше имя *" id="first-name" class="main-form__input" required>
-          <label for="patronymic" class="main-form__label">Отчество:</label>
-          <input type="text" name="patronymic" value="Ну и отчество тоже" id="patronymic" class="main-form__input">
+          <div class="main-form__block-wrapper">
+            <label for="surname" class="main-form__label">Фамилия:</label>
+            <input type="text" name="surname" value="Укажите фамилию *" id="surname" class="main-form__input" required>
+            <label for="first-name" class="main-form__label">Имя:</label>
+            <input type="text" name="first-name" value="Введите ваше имя *" id="first-name" class="main-form__input" required>
+            <label for="patronymic" class="main-form__label">Отчество:</label>
+            <input type="text" name="patronymic" value="Ну и отчество тоже" id="patronymic" class="main-form__input">
+          </div>
           <fieldset class="main-form__checkbox-list">
             <legend class="main-form__list-name">
               Ваши безбашенные достижения в путешествии
@@ -55,10 +57,12 @@
             <input type="checkbox" name="crush" id="crush" class="main-form__checkbox-input">
             <label class="main-form__checkbox-label" for="crush">Разгромил отель</label>
           </fieldset>
-          <label for="phone" class="main-form__label">Номер телефона</label>
-          <input type="text" name="phone" value="Номер, пожалуйста" id="phone" class="main-form__input">
-          <label for="email" class="main-form__label">Адрес почты</label>
-          <input type="text" name="email" value="Введите почту *" id="email" class="main-form__input" required>
+          <div class="main-form__block-wrapper">
+            <label for="phone" class="main-form__label">Номер телефона</label>
+            <input type="text" name="phone" value="Номер, пожалуйста" id="phone" class="main-form__input">
+            <label for="email" class="main-form__label">Адрес почты</label>
+            <input type="text" name="email" value="Введите почту *" id="email" class="main-form__input" required>
+          </div>
           <fieldset class="main-form__radio-list">
             <legend class="main-form__list-name">
               С каким приложением путешествовали?
@@ -90,7 +94,6 @@
             </p>
             <button class="main-form__button">ЗАКРЫТЬ ОКНО</button>
           </div>
-
         </form>
       </div>
       <footer class="footer-inner">
