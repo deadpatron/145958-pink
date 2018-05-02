@@ -1,0 +1,46 @@
+.footer-inner {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 60px;
+
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner__index-link {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.footer-inner__social-list {
+  list-style: none;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-inner__social-items {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.footer-inner__academy {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: 40px;
+}
