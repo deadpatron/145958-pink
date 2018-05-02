@@ -24,58 +24,73 @@
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Pink, раскрась серые будни в розовый цвет!</h1>
-      <div class="main-page__example">
-        <img class="main-page__example-img" src="../img/iphone-hand-mobile@1x.png" width="260" height="290" alt="Пример обработки фото"/>
+      <div class="main-page__app-wrapper">
+        <div class="main-page__example">
+          <img class="main-page__example-img" src="../img/iphone-hand-mobile@1x.png" width="260" height="290" alt="Пример обработки фото"/>
+        </div>
+        <section class="application-install">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <p class="application-install__text">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="application-install__btn btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+          <ul class="application-install__list">
+            <li class="application-install__item">
+              <a class="application-install__item application-install__item--apple-store" href="https://www.apple.com/ru/ios/app-store/">
+                <img class="application-install__img" src="../img/logo-apple.svg" width="47" height="56" alt="appStore">
+                <span class="visually-hidden">apple-store</span>
+              </a>
+            </li>
+            <li class="application-install__item">
+              <a class="application-install__item application-install__item--google-play" href="https://play.google.com/store">
+                <img class="application-install__img" src="../img/logo-android.svg" width="43" height="47" alt="androidPlay">
+                <span class="visually-hidden">google-play</span>
+              </a>
+            </li>
+            <li class="application-install__item">
+              <a class="application-install__item application-install__item--windows-phone" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+                <img class="application-install__img" src="../img/logo-microsoft.svg" width="44" height="41" alt="windowsStrore">
+                <span class="visually-hidden">windows-phone</span>
+              </a>
+            </li>
+          </ul>
+          <p class="application-install__info">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
       </div>
-      <section class="application-install">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="application-install__btn btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-        <ul class="application-install__list">
-          <li class="application-install__item">
-            <a class="application-install__item application-install__item--apple-store" href="https://www.apple.com/ru/ios/app-store/">
-              <img class="application-install__img" src="../img/logo-apple.svg" width="47" height="56" alt="appStore">
-              <span class="visually-hidden">apple-store</span>
-            </a>
-          </li>
-          <li class="application-install__item">
-            <a class="application-install__item application-install__item--google-play" href="https://play.google.com/store">
-              <img class="application-install__img" src="../img/logo-android.svg" width="43" height="47" alt="androidPlay">
-              <span class="visually-hidden">google-play</span>
-            </a>
-          </li>
-          <li class="application-install__item">
-            <a class="application-install__item application-install__item--windows-phone" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
-              <img class="application-install__img" src="../img/logo-microsoft.svg" width="44" height="41" alt="windowsStrore">
-              <span class="visually-hidden">windows-phone</span>
-            </a>
-          </li>
-        </ul>
-        <p class="application-install__info">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
       <section class="information">
         <h2 class="visually-hidden">Возможности приложения</h2>
         <div class="information__intro-wrapper">
           <p class="information__intro">Устали от серости мегаполиса?</p>
           <p class="information__intro">Нам есть, что вам предложить!</p>
         </div>
-        <ul class="information__list">
-          <li class="information__item">
-            <h3 class="information__title">Поднимает настроение</h3>
-            <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="information__img-wrapper">
+        <div class="information__wrapper">
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__title">Поднимает настроение</h3>
+              <p class="information__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Меняет мир вокруг</h3>
+              <p class="information__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Заводит новых друзей</h3>
+              <p class="information__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
           <img src="../img/iphone-screen-mobile@1x.png" alt="всем привет!" class="information__hi-img" width="157" height="320">
+        </div>
+        <div class="information__static">
+          <img class="information__static-img" src="http://placehold.it/280x240" alt="Эффект на сутки" width="240" height="280">
+          <div class="information__static-wrapper">
+            <h3 class="information__static-title">Эффект на 24 часа!</h3>
+            <p class="information__static-text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a href="#" class="information__static-link">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="comments">

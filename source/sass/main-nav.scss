@@ -12,3 +12,9 @@
   /*Потом буду инлайнить*/
   background-image: url(../img/icon-menu-cross.svg);
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

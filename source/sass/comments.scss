@@ -70,3 +70,23 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media(min-width: $tablet-width) {
+  .comments__wrapper::before {
+    width: 0px;
+    height: 0px;
+  }
+
+  .comments {
+    min-width: 660px;
+  }
+
+  .comments__description {
+    min-width: 660px;
+  }
+
+  .comments__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

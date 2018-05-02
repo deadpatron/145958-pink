@@ -23,7 +23,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header-page__logo {
 
+}
+
+@media (min-width: $desktop-width) {
+  .header-page {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-right: 130px;
   }
+
 }

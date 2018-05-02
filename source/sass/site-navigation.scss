@@ -33,3 +33,14 @@
     opacity: $opasity-link;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .site-navigation__item {
+    padding: 45px 0;
+    padding-left: 80px;
+  }
+}
