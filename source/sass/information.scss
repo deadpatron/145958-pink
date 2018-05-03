@@ -67,9 +67,13 @@
   flex-direction: column;
 }
 
-.information__hi-img {
+.information__img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.information__img--invisible {
+  display: none;
 }
 
 .information__static {
@@ -107,5 +111,30 @@
 
   .information__static-wrapper {
     padding-left: 70px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .information {
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .information__img--invisible {
+    display: block;
+  }
+
+  .information__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .information__img-wrapper {
+    display: flex;
+  }
+
+  .information__list {
+    flex-direction: row;
   }
 }
