@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.comments__intro {
+  display: none;
+}
+
 .comments__title {
   margin: 0;
   margin-top: -10px;
@@ -79,6 +83,10 @@
 
   .comments {
     min-width: 660px;
+  }
+
+  .comments__intro {
+    display: block;
   }
 
   .comments__description {

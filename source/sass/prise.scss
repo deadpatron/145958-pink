@@ -3,4 +3,34 @@
 
   margin-left: auto;
   margin-right: auto;
+
+  border-collapse: collapse;
+
+  flex-shrink: 0;
+
+  min-width: 278px;
+
+}
+
+.prise__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.prise__head {
+  border: 1px solid black;
+
+}
+
+.prise__list {
+  border: 1px solid black;
+}
+
+.prise__toggles {
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
 }
