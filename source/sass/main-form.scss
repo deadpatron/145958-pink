@@ -64,12 +64,18 @@
 }
 
 .main-form__label {
+  color: #d22856;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-form__label-text {
   padding-left: 43px;
   padding-bottom: 10px;
   padding-top: 25px;
-
-  color: #d22856;
-  text-transform: uppercase;
 }
 
 .main-form__input {
@@ -104,6 +110,20 @@
 
   display: flex;
   flex-direction: column;
+
+  background-color: #f2f2f2;
+}
+
+.main-form__radio-wrapper {
+  margin: 0;
+
+  background-color: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
 }
 
 .main-form__comment {
@@ -127,6 +147,7 @@
 .main-form__error-wrapper {
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .main-form__error {
@@ -151,6 +172,7 @@
 .main-form__access-wrapper {
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .main-form__access {
@@ -170,4 +192,110 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 40px;
+}
+
+@media (min-width:$tablet-width) {
+  .main-form {
+    width: 660px;
+  }
+  .main-form__title {
+    width: 660px;
+  }
+
+  .main-form__wrapper {
+    width: 660px;
+  }
+
+  .main-form__block-wrapper {
+  }
+
+  .main-form__label {
+    flex-direction: row;
+  }
+
+  .main-form__input {
+    flex-grow: 1;
+  }
+
+  .main-form__block-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .main-form__box-wrapper {
+    width: 660px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main-form__radio-list {
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: row;
+
+    border: 2px solid grey;
+
+    margin-bottom: 20px;
+  }
+
+  .main-form__checkbox-list {
+    border: 2px solid grey;
+
+    background-color: #ffffff;
+
+    width: 660px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .main-form {
+    width: 1200px;
+  }
+  .main-form__title {
+    width: 1200px;
+  }
+
+  .main-form__items {
+    width: 1200px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-form__wrapper {
+    width: 1200px;
+  }
+
+  .main-form__block-wrapper {
+    width: 50%;
+  }
+
+  .main-form__box-wrapper {
+    width: 1200px;
+  }
+
+  .main-form__radio-list {
+    width: 440px;
+
+    margin-top: -150px;
+    margin-bottom: 180px;
+    margin-right: 0;
+  }
+
+  .main-form__checkbox-list {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+  }
+
+  .main-form__comment {
+    width: 1200px;
+  }
+
+  .main-form__button {
+    margin: 0;
+    margin-right: auto;
+  }
 }

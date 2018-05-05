@@ -12,8 +12,8 @@
       <a href="index.html" class="header-page__logo">
         <img src="http://placehold.it/75x22" alt="Pink" class="header-page__logo-img" width="75" height="22">
       </a>
-      <button class="header-page__toggle"><span class="visually-hidden">Показать/закрыть меню</span></button>
       <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Показать/закрыть меню</span></button>
         <ul class="main-nav__list site-navigation">
           <li class="site-navigation__item"><a href="index.html">Главная</a></li>
           <li class="site-navigation__item"><a href="photo.html">Фотографии</a></li>
@@ -33,49 +33,67 @@
         </p>
         <form class="main-form__items" action="https://echo.htmlacademy.ru">
           <div class="main-form__block-wrapper">
-            <label for="surname" class="main-form__label">Фамилия:</label>
-            <input type="text" name="surname" value="Укажите фамилию *" id="surname" class="main-form__input" required>
-            <label for="first-name" class="main-form__label">Имя:</label>
-            <input type="text" name="first-name" value="Введите ваше имя *" id="first-name" class="main-form__input" required>
-            <label for="patronymic" class="main-form__label">Отчество:</label>
-            <input type="text" name="patronymic" value="Ну и отчество тоже" id="patronymic" class="main-form__input">
+            <label for="surname" class="main-form__label"><span class="main-form__label-text">Фамилия:</span>
+              <input type="text" name="surname" value="Укажите фамилию *" id="surname" class="main-form__input" required>
+            </label>
+            <label for="first-name" class="main-form__label"><span class="main-form__label-text">Имя:</span>
+              <input type="text" name="first-name" value="Введите ваше имя *" id="first-name" class="main-form__input" required>
+            </label>
+            <label for="patronymic" class="main-form__label"><span class="main-form__label-text">Отчество:</span>
+              <input type="text" name="patronymic" value="Ну и отчество тоже" id="patronymic" class="main-form__input">
+            </label>
           </div>
-          <fieldset class="main-form__checkbox-list">
-            <legend class="main-form__list-name">
-              Ваши безбашенные достижения в путешествии
-            </legend>
-            <input type="checkbox" name="selfi" id="selfi" class="main-form__checkbox-input" checked>
-            <label class="main-form__checkbox-label" for="selfi">Сделал селфи с акулой</label>
-            <input type="checkbox" name="borned" id="borned" class="main-form__checkbox-input" checked>
-            <label class="main-form__checkbox-label" for="borned">Обгорел на пляже</label>
-            <input type="checkbox" name="chack-saw" id="chack-saw" class="main-form__checkbox-input">
-            <label class="main-form__checkbox-label" for="chack-saw">Видел Чака Норриса</label>
-            <input type="checkbox" name="bay" id="bay" class="main-form__checkbox-input">
-            <label class="main-form__checkbox-label" for="bay">Накупил сувениров</label>
-            <input type="checkbox" name="hold" id="hold" class="main-form__checkbox-input" checked>
-            <label class="main-form__checkbox-label" for="hold">Удержал башню</label>
-            <input type="checkbox" name="crush" id="crush" class="main-form__checkbox-input">
-            <label class="main-form__checkbox-label" for="crush">Разгромил отель</label>
-          </fieldset>
-          <div class="main-form__block-wrapper">
-            <label for="phone" class="main-form__label">Номер телефона</label>
-            <input type="text" name="phone" value="Номер, пожалуйста" id="phone" class="main-form__input">
-            <label for="email" class="main-form__label">Адрес почты</label>
-            <input type="text" name="email" value="Введите почту *" id="email" class="main-form__input" required>
+          <div class="main-form__box-wrapper">
+            <fieldset class="main-form__checkbox-list">
+              <legend class="main-form__list-name">
+                Ваши безбашенные достижения в путешествии
+              </legend>
+              <label class="main-form__checkbox-label" for="selfi">
+              <input type="checkbox" name="selfi" id="selfi" class="main-form__checkbox-input" checked>
+              Сделал селфи с акулой</label>
+              <label class="main-form__checkbox-label" for="borned">
+              <input type="checkbox" name="borned" id="borned" class="main-form__checkbox-input" checked>
+              Обгорел на пляже</label>
+              <label class="main-form__checkbox-label" for="chack-saw">
+              <input type="checkbox" name="chack-saw" id="chack-saw" class="main-form__checkbox-input">
+              Видел Чака Норриса</label>
+              <label class="main-form__checkbox-label" for="bay">
+              <input type="checkbox" name="bay" id="bay" class="main-form__checkbox-input">
+              Накупил сувениров</label>
+              <label class="main-form__checkbox-label" for="hold">
+              <input type="checkbox" name="hold" id="hold" class="main-form__checkbox-input" checked>
+              Удержал башню</label>
+              <label class="main-form__checkbox-label" for="crush">
+              <input type="checkbox" name="crush" id="crush" class="main-form__checkbox-input">
+              Разгромил отель</label>
+            </fieldset>
+            <fieldset class="main-form__contacts">
+              <label for="phone" class="main-form__label">Номер телефона</label>
+              <input type="text" name="phone" value="Номер, пожалуйста" id="phone" class="main-form__input">
+              <label for="email" class="main-form__label">Адрес почты</label>
+              <input type="text" name="email" value="Введите почту *" id="email" class="main-form__input" required>
+            </fieldset>
+            <fieldset class="main-form__radio-list">
+              <legend class="main-form__list-name">
+                С каким приложением путешествовали?
+              </legend>
+              <div class="main-form__radio-wrapper">
+                <label for="ios" class="main-form__radio-label">
+                <input type="radio" name="app" id="ios" class="main-form__radio-input" checked>
+                Pink для iOS</label>
+                <label for="android" class="main-form__radio-label">
+                <input type="radio" name="app" id="android" class="main-form__radio-input">
+                Pink на Android</label>
+                <label for="w-phone" class="main-form__radio-label">
+                <input type="radio" name="app" id="w-phone" class="main-form__radio-input">
+                Windows Phone</label>
+              </div>
+            </fieldset>
           </div>
-          <fieldset class="main-form__radio-list">
-            <legend class="main-form__list-name">
-              С каким приложением путешествовали?
-            </legend>
-            <input type="radio" name="app" id="ios" class="main-form__radio-input" checked>
-            <label for="ios" class="main-form__radio-label">Pink для iOS</label>
-            <input type="radio" name="app" id="android" class="main-form__radio-input">
-            <label for="android" class="main-form__radio-label">Pink на Android</label>
-            <input type="radio" name="app" id="w-phone" class="main-form__radio-input">
-            <label for="w-phone" class="main-form__radio-label">Windows Phone</label>
-          </fieldset>
-          <label for="comment" class="main-form__label">Опишите свои эмоции</label>
-          <textarea class="main-form__comment" rows="5" id="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <div class="main-form__comment-wrapper">
+            <label for="comment" class="main-form__label">Опишите свои эмоции</label>
+            <textarea class="main-form__comment" rows="5" id="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
           <button type="submit" class="main-form__button">Отправить форму</button>
           <p class="main-form__required">
             * — обязательные поля
@@ -96,34 +114,34 @@
           </div>
         </form>
       </div>
-      <footer class="footer-inner">
-        <a href="index.html" class="footer-inner__index-link">
-          <img src="http://placehold.it/147x40" alt="логотип-pink" width="147" height="40" class="footer-inner__img">
+      <footer class="footer-page__adaptive footer-page__inner">
+        <a href="index.html" class="footer-page__index-link">
+          <img src="http://placehold.it/147x40" alt="логотип-pink" width="147" height="40" class="footer-page__img">
         </a>
-        <ul class="footer-inner__social-list">
-          <li class="footer-inner__social-items">
-            <a href="#" class="footer-inner__social-link">
+        <ul class="footer-page__social-list">
+          <li class="footer-page__social-items">
+            <a href="#" class="footer-page__social-link">
               <span class="visually-hidden">twitter</span>
-              <img src="http://placehold.it/55x55" alt="twitter" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--twitter">
+              <img src="http://placehold.it/55x55" alt="twitter" width="55" height="55" class="footer-page__social-img footer-page__social-img--twitter">
             </a>
           </li>
-          <li class="footer-inner__social-items">
-            <a href="#" class="footer-inner__social-link">
+          <li class="footer-page__social-items">
+            <a href="#" class="footer-page__social-link">
               <span class="visually-hidden">facebook</span>
-              <img src="http://placehold.it/55x55" alt="facebook" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--facebook">
+              <img src="http://placehold.it/55x55" alt="facebook" width="55" height="55" class="footer-page__social-img footer-page__social-img--facebook">
             </a>
           </li>
-          <li class="footer-inner__social-items">
-            <a href="#" class="footer-inner__social-link">
+          <li class="footer-page__social-items">
+            <a href="#" class="footer-page__social-link">
               <span class="visually-hidden">youtube</span>
-              <img src="http://placehold.it/55x55" alt="youtube" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--youtube">
+              <img src="http://placehold.it/55x55" alt="youtube" width="55" height="55" class="footer-page__social-img footer-page__social-img--youtube">
             </a>
           </li>
         </ul>
-        <div class="footer-inner__academy">
-          <span class="footer-inner__copy-right">Разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-inner__academy-link">
-            <img class="footer-inner__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="логотип академии"/>
+        <div class="footer-page__academy">
+          <span class="footer-page__copy-right">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-page__academy-link">
+            <img class="footer-page__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="логотип академии"/>
           </a>
         </div>
       </footer>

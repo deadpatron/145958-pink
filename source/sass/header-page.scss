@@ -23,11 +23,15 @@
 }
 
 @media (min-width: $tablet-width) {
-
+  .header-page {
+    min-width: 660px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .header-page {
+    min-width: 1200px;
+
     flex-direction: row;
     flex-wrap: wrap;
 
