@@ -32,7 +32,7 @@
       <section class="user-photo">
         <h2 class="visually-hidden">Фотографии других пользователей</h2>
         <ul class="user-photo__list">
-          <li class="user-photo__items">
+          <li class="user-photo__items user-photo__items--panorama">
             <img src="http://placehold.it/280x180" alt="фото Анны" width="280" height="180" class="user-photo__img user-photo__img--panorama-day">
             <div class="user-photo__item-wrapper">
               <b class="user-photo__user-name">Анна</b>
@@ -111,56 +111,60 @@
         <h2 class="visually-hidden">Добавьте своё фото</h2>
         <form class="photo-editor" action="https://echo.htmlacademy.ru">
           <img src="http://placehold.it/280x374" alt="загруженное фото" width="280" height="374" class="photo-editor__img">
-          <ul class="photo-editor__tools-list">
-            <li class="photo-editor__tool photo-editor__tool--active">
-              <img src="http://placehold.it/50x50" alt="обрезать" width="50" height="50" class="photo-editor__tool-ikon">
-              <input type="range" name="intensity-cut" id="intensity-cut" class="photo-editor__intensity">
-              <label for="intensity-cut" class="visually-hidden">обрезать</label>
-            </li>
-            <li class="photo-editor__tool">
-              <img src="http://placehold.it/50x50" alt="контраст" width="50" height="50" class="photo-editor__tool-ikon">
-              <input type="range" name="intensity-contrast" id="intensity-contrast" class="photo-editor__intensity">
-              <label for="intensity-contrast" class="visually-hidden">контраст</label>
-            </li>
-            <li class="photo-editor__tool">
-              <img src="http://placehold.it/50x50" alt="закраска" width="50" height="50" class="photo-editor__tool-ikon">
-              <input type="range" name="intensity-fill" id="intensity-fill" class="photo-editor__intensity">
-              <label for="intensity-fill" class="visually-hidden">закраска</label>
-            </li>
-          </ul>
-          <button type="submit" class="photo-editor__button button">Запостить</button>
-          <button type="reset" class="photo-editor__button button--disable">Отмена</button>
+          <div class="user-photo__wrapper">
+            <ul class="photo-editor__tools-list">
+              <li class="photo-editor__tool photo-editor__tool--active">
+                <img src="http://placehold.it/50x50" alt="обрезать" width="50" height="50" class="photo-editor__tool-ikon">
+                <input type="range" name="intensity-cut" id="intensity-cut" class="photo-editor__intensity">
+                <label for="intensity-cut" class="visually-hidden">обрезать</label>
+              </li>
+              <li class="photo-editor__tool">
+                <img src="http://placehold.it/50x50" alt="контраст" width="50" height="50" class="photo-editor__tool-ikon">
+                <input type="range" name="intensity-contrast" id="intensity-contrast" class="photo-editor__intensity">
+                <label for="intensity-contrast" class="visually-hidden">контраст</label>
+              </li>
+              <li class="photo-editor__tool">
+                <img src="http://placehold.it/50x50" alt="закраска" width="50" height="50" class="photo-editor__tool-ikon">
+                <input type="range" name="intensity-fill" id="intensity-fill" class="photo-editor__intensity">
+                <label for="intensity-fill" class="visually-hidden">закраска</label>
+              </li>
+            </ul>
+            <div class="user-photo__button-wrapper">
+              <button type="submit" class="photo-editor__button button">Запостить</button>
+              <button type="reset" class="photo-editor__button button--disable">Отмена</button>
+            </div>
+          </div>
         </form>
       </section>
     </main>
-    <footer class="footer-inner">
-      <a href="index.html" class="footer-inner__index-link">
-        <img src="http://placehold.it/147x40" alt="логотип-pink" width="147" height="40" class="footer-inner__img">
+    <footer class="footer-page__adaptive">
+      <a href="index.html" class="footer-page__index-link">
+        <img src="http://placehold.it/147x40" alt="логотип-pink" width="147" height="40" class="footer-page__img">
       </a>
-      <ul class="footer-inner__social-list">
-        <li class="footer-inner__social-items">
-          <a href="#" class="footer-inner__social-link">
+      <ul class="footer-page__social-list">
+        <li class="footer-page__social-items">
+          <a href="#" class="footer-page__social-link">
             <span class="visually-hidden">twitter</span>
-            <img src="http://placehold.it/55x55" alt="twitter" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--twitter">
+            <img src="http://placehold.it/55x55" alt="twitter" width="55" height="55" class="footer-page__social-img footer-page__social-img--twitter">
           </a>
         </li>
-        <li class="footer-inner__social-items">
-          <a href="#" class="footer-inner__social-link">
+        <li class="footer-page__social-items">
+          <a href="#" class="footer-page__social-link">
             <span class="visually-hidden">facebook</span>
-            <img src="http://placehold.it/55x55" alt="facebook" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--facebook">
+            <img src="http://placehold.it/55x55" alt="facebook" width="55" height="55" class="footer-page__social-img footer-page__social-img--facebook">
           </a>
         </li>
-        <li class="footer-inner__social-items">
-          <a href="#" class="footer-inner__social-link">
+        <li class="footer-page__social-items">
+          <a href="#" class="footer-page__social-link">
             <span class="visually-hidden">youtube</span>
-            <img src="http://placehold.it/55x55" alt="youtube" width="55" height="55" class="footer-inner__social-img footer-inner__social-img--youtube">
+            <img src="http://placehold.it/55x55" alt="youtube" width="55" height="55" class="footer-page__social-img footer-page__social-img--youtube">
           </a>
         </li>
       </ul>
-      <div class="footer-inner__academy">
-        <span class="footer-inner__copy-right">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-inner__academy-link">
-          <img class="footer-inner__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="логотип академии"/>
+      <div class="footer-page__academy">
+        <span class="footer-page__copy-right">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-page__academy-link">
+          <img class="footer-page__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="логотип академии"/>
         </a>
       </div>
     </footer>

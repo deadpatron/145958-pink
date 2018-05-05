@@ -49,3 +49,27 @@
 
   width: 250px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-photo {
+    width: 660px;
+  }
+
+  .main-photo__head {
+    width: 100%;
+  }
+
+  .main-photo__support-text {
+    width: 450px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-photo {
+    width: 1200px;
+  }
+
+  .main-photo__support-text {
+    width: 600px;
+  }
+}
