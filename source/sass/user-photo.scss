@@ -67,16 +67,10 @@
   }
 
   .user-photo__items {
-    width: 280px;
+    width: 305px;
   }
 
   .user-photo__items--panorama {
-    width: 100%;
-  }
-}
-
-@media (min-width:$desktop-width) {
-  .user-photo__list {
     width: 100%;
   }
 }

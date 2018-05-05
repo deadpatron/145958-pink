@@ -2,7 +2,7 @@
   list-style: none;
 }
 
-.user-photo__button-wrapper {
+.photo-editor__button-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,5 +19,11 @@
 
   .photo-editor__tools-list {
     width: 275px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .photo-editor__button-wrapper {
+    flex-direction: row;
   }
 }
