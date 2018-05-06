@@ -1,44 +1,33 @@
 .main-form {
   display: flex;
   flex-direction: column;
-
   width: 320px;
-
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0;
 }
 
 .main-form__title {
   text-align: center;
-
   font-size: 24px;
   font-weight: lighter;
-
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 17%;
   background-repeat: no-repeat;
   background-color: $menu-bg;
-
   width: 314px;
   min-height: 170px;
-
   margin: 0;
   padding-top: 30px;
   padding-left: 3px;
   padding-right: 3px;
-
   color: #ffffff;
 }
 
 .main-form__wrapper {
   margin: 0 auto;
   padding: 0;
-
   display: flex;
   flex-direction: column;
-
   width: 320px;
 }
 
@@ -46,7 +35,6 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-
   padding: 50px 25px;
   margin: 0;
 }
@@ -58,7 +46,6 @@
 
 .main-form__block-wrapper {
   padding-bottom: 40px;
-
   display: flex;
   flex-direction: column;
 }
@@ -66,7 +53,6 @@
 .main-form__label {
   color: #d22856;
   text-transform: uppercase;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -85,15 +71,11 @@
 
 .main-form__checkbox-list {
   border: none;
-
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-wrap: wrap;
-
   width: 320px;
-
   background-color: #f2f2f2;
 }
 
@@ -101,42 +83,33 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
-
   background-color: #f2f2f2;
 }
 
 .main-form__radio-list {
   border: none;
-
   display: flex;
   flex-direction: column;
-
   background-color: #f2f2f2;
 }
 
 .main-form__radio-wrapper {
   margin: 0;
-
   background-color: #f2f2f2;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-
 }
 
 .main-form__comment {
   font-family: inherit;
   font-size: 18px;
   font-weight: normal;
-
   margin: 18px 20px;
 }
 
 .main-form__button {
   margin: 0 auto;
-
   width: 280px;
 }
 
@@ -154,16 +127,13 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-
   display: block;
-
   padding-top: 47px;
   padding-bottom: 35px;
 }
 
 .main-form__error-description {
   text-align: center;
-
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 40px;
@@ -179,25 +149,22 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-
   display: block;
-
   padding-top: 47px;
   padding-bottom: 35px;
 }
 
 .main-form__access-description {
   text-align: center;
-
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 40px;
 }
-
 @media (min-width:$tablet-width) {
   .main-form {
     width: 660px;
   }
+
   .main-form__title {
     width: 660px;
   }
@@ -206,8 +173,7 @@
     width: 660px;
   }
 
-  .main-form__block-wrapper {
-  }
+  .main-form__block-wrapper {}
 
   .main-form__label {
     flex-direction: row;
@@ -223,7 +189,6 @@
 
   .main-form__box-wrapper {
     width: 660px;
-
     display: flex;
     flex-direction: column-reverse;
   }
@@ -231,34 +196,28 @@
   .main-form__radio-list {
     margin-left: auto;
     margin-right: auto;
-
     flex-direction: row;
-
     border: 2px solid grey;
-
     margin-bottom: 20px;
   }
 
   .main-form__checkbox-list {
     border: 2px solid grey;
-
     background-color: #ffffff;
-
     width: 660px;
   }
 }
-
 @media (min-width:$desktop-width) {
   .main-form {
     width: 1200px;
   }
+
   .main-form__title {
     width: 1200px;
   }
 
   .main-form__items {
     width: 1200px;
-
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -277,7 +236,6 @@
 
   .main-form__radio-list {
     width: 440px;
-
     margin-top: -150px;
     margin-bottom: 180px;
     margin-right: 0;
@@ -286,7 +244,6 @@
   .main-form__checkbox-list {
     margin-left: auto;
     margin-right: auto;
-
     width: 1200px;
   }
 
@@ -295,7 +252,6 @@
   }
 
   .main-form__button {
-    margin: 0;
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
 }
