@@ -6,6 +6,7 @@
   margin-right: auto;
   padding: 0;
   padding-top: 1px;
+  padding-bottom: 65px;
 
   position: relative;
 
@@ -56,7 +57,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .comments__description {
@@ -67,12 +67,13 @@
   margin-top: 15px;
   padding: 0;
 
-  width: 280px;
+  width: 270px;
 }
 
 .comments__toggles {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 19px;
 }
 
 @media(min-width: $tablet-width) {

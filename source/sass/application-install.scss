@@ -19,6 +19,8 @@
   line-height: 1.2;
 
   width: 195px;
+
+  display: none;
 }
 
 .application-install__btn {
@@ -30,7 +32,6 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  letter-spacing: 1px;
 
   border: 2px solid #ffffff;
   border-radius: 50px;
@@ -65,5 +66,9 @@
   .application-install {
     margin: 0;
     margin-left: auto;
+  }
+
+  .application-install__text {
+    display: block;
   }
 }

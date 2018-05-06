@@ -1,0 +1,22 @@
+.slider__toggles {
+  width: 66px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__toggle {
+  border: none;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  background-image: url("../img/slider-dot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__toggle--active {
+  background-image: url("../img/slider-active.png");
+}
