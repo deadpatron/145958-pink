@@ -3,34 +3,97 @@
 
   margin-left: auto;
   margin-right: auto;
-  padding-top: 65px;
+  padding-top: 63px;
+  padding-bottom: 32px;
 
   border-collapse: collapse;
 
   display: flex;
   flex-direction: column;
-
-
 }
 
 .prise__wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   width: 320px;
 
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
+
+  position: relative;
+}
+
+.prise__table {
+  width: 284px;
+
+  flex-shrink: 0;
+
+  position: absolute;
+}
+
+.prise__table--one {
+  left: -260px;
+}
+
+.prise__table--three {
+  right: -260px;
+}
+
+.prise__table--active {
+  margin-left: auto;
+  margin-right: auto;
+
+  position: static;
 }
 
 .prise__head {
-  border: 1px solid black;
+  border: 2px solid $border-color;
 
+  background-color: #283645;
+  color: #ffffff;
+
+  width: 278px;
+
+  padding-top: 17px;
+  padding-bottom: 21px;
+}
+
+.prise__header {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prise__cost {
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
 }
 
 .prise__list {
   border: 1px solid black;
+}
+
+.prise__name {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  display: block;
+
+  padding-top: 11px;
+  padding-left: 24px;
+  padding-bottom: 16px;
 }
 
 .prise__toggles-wrapper {
