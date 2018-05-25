@@ -14,6 +14,8 @@
 
 .prise__wrapper {
   display: flex;
+  //хз с этими таблицами
+  flex-wrap: wrap;
 
   width: 320px;
 
@@ -25,19 +27,25 @@
 }
 
 .prise__table {
-  width: 284px;
+  width: 276px;
 
   flex-shrink: 0;
 
-  position: absolute;
+//  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px solid $border-color;
+  border-collapse: collapse;
 }
 
 .prise__table--one {
-  left: -260px;
+//  left: -260px;
 }
 
 .prise__table--three {
-  right: -260px;
+//  right: -260px;
 }
 
 .prise__table--active {
@@ -49,6 +57,7 @@
 
 .prise__head {
   border: 2px solid $border-color;
+  border-bottom: none;
 
   background-color: #283645;
   color: #ffffff;
@@ -57,6 +66,8 @@
 
   padding-top: 17px;
   padding-bottom: 21px;
+
+  position: relative;
 }
 
 .prise__header {
@@ -79,7 +90,11 @@
 }
 
 .prise__list {
-  border: 1px solid black;
+  border-bottom: 2px solid $border-color;
+}
+
+.prise__item {
+  background-color: #ffffff;
 }
 
 .prise__name {
@@ -91,9 +106,34 @@
 
   display: block;
 
-  padding-top: 11px;
+  padding-top: 16px;
   padding-left: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
+}
+
+.prise__head--hit::after {
+  content: "ХИТ";
+  transform: rotate(-45deg);
+
+  width: 73px;
+  height: 73px;
+
+  position: absolute;
+  left: 1px;
+  top: 7px;
+}
+
+.prise__head--hit::before {
+  content: "";
+
+  width: 73px;
+  height: 73px;
+
+  background-image: url(../img/bg-hit.svg);
+
+  position: absolute;
+  left: -1px;
+  top: 0;
 }
 
 .prise__toggles-wrapper {
